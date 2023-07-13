@@ -21,7 +21,22 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
+.container > * {
+  margin-bottom: .75rem;
+}
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.color-option {
+  height: 2rem;
+  width: auto;
+}
+.color-options__picker {
+  width: 2.5rem;
+}
 .grid {
   margin: 0 auto;
   width: 600px;

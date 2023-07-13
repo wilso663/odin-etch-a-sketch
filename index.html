@@ -15,12 +15,18 @@
       <p>by Stephen Wilson</p>
     </div>
     <div class="color-options">
-      <!-- TODO: Add button for select color
-      add button for eraser
-      add button for reset board
-      add button for rainbow
-      add auto populate grid method instead of hard coded elements
-      add slider for 16 to 100 height -->
+      <!-- TODO:
+      add auto populate grid method instead of hard coded elements-->
+      <button class="color-option color-options__black">Black</button>
+      <input type="color" class="color-option color-options__picker" value="#ff0000">
+      <button class="color-option color-options__white">Eraser</button>
+
+      <button class="color-option color-options__rainbow">Rainbow</button>
+      <button class="color-option color-options__reset">Reset</button>
+    </div>
+    <div class="grid-size">
+      <input type="range" min="16" max="100" value="16" class="grid-size-slider" alt="color picker input button">
+      <span id="slider-value"></span>
     </div>
     <div class="grid">
 
