@@ -43,8 +43,8 @@ body {
   height: 600px;
   border: 3px solid #ffffff;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(4,1fr);
+  /* grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr); */
 }
 
 .grid-square {
