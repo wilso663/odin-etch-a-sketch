@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+  padding: 50px 0;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+  border: 3px solid #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+
+.grid-square {
+  border: 1px solid black;
+}
