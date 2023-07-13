@@ -37,16 +37,20 @@ body {
 .color-options__picker {
   width: 2.5rem;
 }
+
 .grid {
   margin: 0 auto;
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   border: 3px solid #ffffff;
   display: grid;
-  /* grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(4,1fr); */
 }
-
+@media screen and (min-width: 768px){
+   .grid {
+    width: 600px;
+    height: 600px;
+  }
+}
 .grid-square {
-  border: 1px solid black;
+  border: 1px solid #686868;
 }

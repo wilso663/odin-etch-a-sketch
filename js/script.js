@@ -81,18 +81,15 @@ class GridController {
   }
 
   populateGrid() {
-    //get grid container element
-    //make and append grid-squares, where height * height = # of squares
-    //set css to be grid template column repeat height 1 fr
-    //set grid template rows repeat height 1fr
     const gridElement = document.querySelector('.grid');
-    //Remove each item of the grid on rewrite
+    //Remove each item of the grid on when resizing
     while(gridElement.firstChild){
       gridElement.removeChild(gridElement.firstChild);
     }
 
     gridElement.style.gridTemplateColumns = `repeat(${this.height}, 1fr)`;
     gridElement.style.gridTemplateRows = `repeat(${this.height}, 1fr)`;
+    
     for(let i = 0; i < this.height * this.height; i++){
       const gridSquare = document.createElement('div');
       gridSquare.classList.add('grid-square');
@@ -123,9 +120,9 @@ class GridController {
   }
 
 }
-
+const DEFAULT_SIZE = 16;
 const colorPickerValue = document.querySelector('.color-options__picker').value;
-const gridController = new GridController(16);
+const gridController = new GridController(DEFAULT_SIZE);
 gridController.populateGrid();
 gridController.setSketchColor(colorPickerValue);
 gridController.addMouseoverColorListeners();
